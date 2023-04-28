@@ -1,0 +1,25 @@
+/*pag ubicanos*/
+    .title-1 {
+        @include textos(2em, white, Georgia, center);
+    }
+
+    .h-2 {
+        @include textos(1.5em, black, Georgia, center);
+
+    }
+
+    .text-3 {
+        color: map-get($map: $colores , $key: tres);
+        margin: 1em;
+        font-size: $text-g;
+    }
+
+
+    .ubicanos-mapa {
+        @include flex(row, center, center);
+        margin-bottom: 5em;
+
+        iframe {
+            width: 100%;
+        }
+    }

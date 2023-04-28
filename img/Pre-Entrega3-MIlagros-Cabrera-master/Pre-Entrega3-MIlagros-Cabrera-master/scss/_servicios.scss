@@ -1,0 +1,96 @@
+/* Css de Servicios*/
+.h1-servicios {
+    color: $colorPrincipal;
+    text-align: center;
+    margin: 1em;
+    text-transform: uppercase;
+    font-family: $font-tercer;
+    font-size: $text-lg;
+}
+
+.servicios-box1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 1em;
+    font-size: $text-sm;
+    text-align: center;
+
+    article {
+        margin: 1em 1em;
+
+        .serv-descrip {
+            font-size:$text-g;
+            color: map-get($map: $colores,$key: tres);
+            font-family: $font-tercer;
+            text-decoration:underline;
+
+            .font-letra {
+                font-size: $text-m;
+
+                &:first-letter{
+                    color:  map-get($map: $colores,$key:once);
+                    font-size:$text-m;
+                 }
+                }
+            }
+            
+        }
+    }
+
+    .bg-violeta {
+        color:$keyColor;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: $text-m;
+     
+    }
+
+
+.galeriaLetras {
+    margin: 1em;
+    text-transform: uppercase;
+    @include textos(2em, deeppink, 'Courier New', center);
+
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+
+    .gallery .pics {
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+      }
+      
+      .gallery .animation {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+      }
+      
+  }
+  
+ 
+  @media (max-width: 450px) {
+    .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+    }
+  }
+
+  
+
+
+
+
+
+
+
