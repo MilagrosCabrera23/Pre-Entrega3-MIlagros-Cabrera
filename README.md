@@ -6,7 +6,7 @@ Este proyecto consiste en la creación de un sitio web para una peluquería. El 
 
 ## Authors
 
-- [@milagroscabrera23]https://github.com/MilagrosCabrera23)
+- [@maguicabrera23]https://github.com/MilagrosCabrera23)
 
 
 ## El sitio web está compuesto por las siguientes páginas:
